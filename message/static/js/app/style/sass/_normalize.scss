@@ -1,0 +1,103 @@
+article,
+aside,
+article,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section{
+  display: block;
+}
+
+audio,
+canvas,
+video{
+  display: inline-block;
+}
+
+body{
+  margin: 0;
+}
+
+a:focus{
+  outline: thin dotted;
+}
+
+a:hover,
+a:active{
+  outline: none;
+}
+
+b, strong{
+  font-weight: bold;
+}
+
+sub,
+sup{
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sup{
+  top: -.5em;
+}
+sub{
+  bottom: -.25em;
+}
+
+pre{
+  white-space: pre;
+  white-space: pre-wrap;
+}
+
+img{
+  border: 0;
+}
+
+fieldset{
+  border: #c0c0c0 solid 1px;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+legend{
+  border: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea{
+  font-family: inherit;
+  margin: 0;
+  font-size: 100%;
+  //vertical-align: middle;
+}
+
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"]{
+  cursor: pointer;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ul{
+  list-style-type: none;
+}
+
+
+
+

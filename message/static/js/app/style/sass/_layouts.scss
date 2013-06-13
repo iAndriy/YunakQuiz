@@ -1,0 +1,253 @@
+//
+//Layouts
+//--------------------------------
+
+//Base
+//---------------
+html, body {
+  height: 100%;
+}
+
+//Wrapper
+//-------------
+.wrapper {
+  margin: $baseLineHeight auto 0;
+  max-width: 1200px;
+  min-width: 950px;
+  background: $wrapperBC url(../image/forest2.jpg) top center no-repeat;
+  @include box-shadow($wrapperShadow);
+} 
+
+.header .container {
+  position: relative;
+}
+
+//Main container
+//--------------
+.container{
+  @include container-fixed();
+  @include grid-core-span($gridColumns, $gridColumnsWidth, $gridGutterWidth);
+}
+
+//Other styles
+//---------------
+.header{
+  .container{
+    .header-hero{
+      @include font-shorthand(27px, 600, 40px);
+      padding: 45px 0;
+      margin: 0 0 0 -10px;
+      color: #f0f0f0;
+      span{
+        padding: 7px 10px;
+        background-color: black; 
+        background-color: rgba(10, 10, 10, .8);
+      }
+    }
+    .login{
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 4px 10px 7px;
+      @include border-radius(0 0 10px 10px);
+      background-color: #f0f0f0;
+      .login__link{
+        border-bottom: 1px dotted #5599dd;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+      form {
+        margin-bottom: 0;
+        @include clearfix();
+      }
+      .login__submit{
+        float: right;
+      }
+      .login__remember-me-checkbox {
+        line-height: 28px;
+        input[type="checkbox"] {
+          margin: 0 4px 4px 0;
+          vertical-align: middle;
+        }
+      }
+      .login__registation {
+        background: #f0f0f0;
+        line-height: 30px;
+        margin: 20px -15px 0;
+        text-align: center; 
+      }
+    }
+  }
+}
+.header-welcome {
+  h3 {
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+  p {
+    @include font-serif(14px, normal, 18px);
+    margin-top: 0;
+    color: $addText;
+  }
+}
+
+.header-blockquote blockquote {
+  margin-bottom: 10px;
+}
+
+.header-blockquote .autor {
+  float: right;
+  color: $addText;
+  font-size: 12px;
+}
+
+.header-blockquote .autor:before {
+  content: "— ";
+}
+
+.content-category {
+  margin-top: 50px;
+}
+.main-category{
+  .category-name{
+    @include font-shorthand(14px, bold, 18px);
+  }
+  .category-counter {
+    font-style: italic;
+    color: $addText;
+    font-family: $serifFontFamily;
+  }
+  hr{
+    margin: 5px 0;
+    // border-top: 1px solid $grayLighter;
+  }
+  .nav{
+    margin-left: 13px;
+    a{
+      display: inline;
+    }
+  }
+}
+
+  .test__header{
+    margin-bottom: 0;
+  }
+  .test__category{
+    font-family: $serifFontFamily;
+    font-size: 14px;
+    color: $addText;
+    margin-bottom: 20px;
+  }
+  .test__question-number{
+    margin-bottom: 5px;
+  }
+  .test__question,
+  .test__right-answer,
+  .test__your-answer,
+  .test__answer-description{
+    margin-left: 20px;
+    font-family: $serifFontFamily;
+  }
+  .test__answer-description {
+    margin-top: 25px;
+  }
+  .test__question-ansvers {
+    list-style-type: none;
+    font-family: $serifFontFamily;
+  }
+  .test__question-number{
+    margin-bottom: 5px;
+  }
+  .test__right-answer {
+    font-weight: bold;
+  }
+  .test__try-again,
+  .test__back-home {
+    margin: 20px 0 10px;
+  }
+
+.get-category{
+  .category-row{
+    margin-bottom: 40px;
+  }
+  h4{
+    margin-top: 0;
+  }
+  h5{
+    margin-bottom: 5px;
+  }
+  .nav li {
+    margin-left: 10px;
+  }
+  .nav a{
+    display: inline;
+  }
+  .test-autor{
+    font-size: 12px;
+    color:$addText;
+    font-style: italic;
+  }
+}
+
+  .search-result__title {
+    display: inline-block;
+  }
+  .search-result__header{
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  .search-result__filter {
+    display: inline-block;
+    margin: 0 0 0 50px;
+  }
+
+.footer{
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.pagination-right {
+  text-align: right;
+}
+
+#menu li {
+            list-style:none;
+            width:350px;
+
+        }
+        #menu li span {
+            width:200px;
+
+        //border:1px solid black;
+        }
+        #menu .selected{
+            width:200px;
+            border:1px solid #c3e3ee;
+        }
+        #menu .activated{
+            background-color: #8cd9ee;
+            width:200px;
+        }
+        #inside .ui-pg-selbox, .ui-pg-input{
+            width: auto;
+             height: auto;
+        }
+        #inside .question_container, #inside #review {
+            margin-top: 20px;
+        }
+

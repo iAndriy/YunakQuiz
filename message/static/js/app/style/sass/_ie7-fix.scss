@@ -1,0 +1,73 @@
+//Horizontal forms
+//-----------------
+.form-search,
+.form-inline,
+.form-horizontal {
+  input,
+  textarea,
+  select,
+  .help-inline,
+  .uneditable-input,
+  .input-prepend,
+  .input-append {
+    @include ie7-inline-block();
+  }
+}  
+
+.other-variant {
+	@include ie7-inline-block();
+}
+
+.btn {
+	@include ie7-inline-block;
+	@include ie7-restore-left-whitespace;
+}
+
+audio,
+canvas,
+video{
+  *display: inline !important;
+  *zoom: 1;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  *margin-top: 0;
+}
+
+select,
+input[type="file"] {
+  *margin-top: 4px; /* For IE7, add top margin to align select with labels */
+}
+
+button.btn,
+input[type="submit"].btn {
+  // IE7 has some default padding on button controls
+  *padding-top: 2px;
+  *padding-bottom: 2px;
+  &.btn-large {
+    *padding-top: 7px;
+    *padding-bottom: 7px;
+  }
+
+  &.btn-small {
+    *padding-top: 3px;
+    *padding-bottom: 3px;
+  }
+  
+  &.btn-mini {
+    *padding-top: 1px;
+    *padding-bottom: 1px;
+  }
+}
+
+.navbar {
+  *position: relative;
+  *z-index: 2;
+}
+
+.search-result__title {
+  @include ie7-inline-block();
+}
+
+

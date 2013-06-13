@@ -1,0 +1,95 @@
+//
+//Typography
+//-------------------------------------
+
+//Body text
+//-------------
+
+p {
+  margin: 0 0 $baseLineHeight / 2;
+}
+
+small {
+  font-size: 85%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: ($baseLineHeight / 2) 0 $baseLineHeight;
+  font-family: $headingsFontFamily;
+  font-weight: $headingsFontWeight;
+  line-height: $baseLineHeight;
+  color: $headingsColor;
+  small {
+    font-weight: normal;
+    line-height: 1;
+  }
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+h1 { font-size: $baseFontSize * 2.75; } // ~38px
+h2 { font-size: $baseFontSize * 2.25; } // ~32px
+h3 { font-size: $baseFontSize * 1.75; } // ~24px
+h4 { font-size: $baseFontSize * 1.25; } // ~18px
+h5 { font-size: $baseFontSize; }
+h6 { font-size: $baseFontSize * 0.85; } // ~12px
+
+h1 small { font-size: $baseFontSize * 1.75; } // ~24px
+h2 small { font-size: $baseFontSize * 1.25; } // ~18px
+h3 small { font-size: $baseFontSize; }
+h4 small { font-size: $baseFontSize * 0.75; }
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 $baseLineHeight / 2 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+li {
+  line-height: $baseLineHeight;
+}
+
+hr {
+  margin: $baseLineHeight 0;
+  border: 0;
+  border-top: 1px solid $hrBorderT;
+  border-bottom: 1px solid $hrBorderB;
+  width: 100%;
+}
+
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 $baseLineHeight;
+  border-left: 5px solid $grayLighter;
+  p {
+    margin-bottom: 0;
+    @include font-serif(14px, 300 ,$baseLineHeight);
+    font-style: italic;
+  }
+  small {
+    display: block;
+    line-height: $baseLineHeight * 0.857;
+    color: $grayLight;
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+}
+
+.pagination-centered {
+  text-align: center;
+}
+.test-question{
+  font-weight: bold;
+  margin-top: 15px;
+}
+a.destroy{
+  color: black;
+}
+

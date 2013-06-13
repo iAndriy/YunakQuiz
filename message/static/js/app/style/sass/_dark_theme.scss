@@ -1,0 +1,28 @@
+$mainBG: url("../image/stressed_linen.png") repeat;
+$logo:   url("../image/logo-b-orange.png") no-repeat;
+$navShadow: -1px 1px 0 #612c0c;
+//$wrapperShadow: 0 0 20px -3px rgba(255,255,255,.4);
+$wrapperShadow: none;
+
+$wrapperBC: 		    rgb(68, 31, 46);
+
+$textColor: 			#ece9d7;
+$headingsColor: 	    #e36b23;
+$addColor: 				#999999;
+
+$linkColor:      	    #e36b23;
+$linkColorHover: 		darken($linkColor, 15%);
+$linkUnderline:         rgb(109, 109, 111);
+
+$hrBorderT:              rgb(15, 17, 19);
+$hrBorderB:              rgb(107, 92, 92);
+
+$inputBackground: 		#fff;
+$inputBorder: 			#ceae78;
+
+$btnBackground:         #e37e23;
+$btnBorder:             darken($btnBackground, 10%);
+$btnColor:              #fff;
+$btnHover:              #e39b23;
+
+$navLinkColor:          #e36b23;

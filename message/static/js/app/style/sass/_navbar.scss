@@ -1,0 +1,217 @@
+//
+//Navbars
+//-----------------------
+
+//Base class adn wrapper
+.navbar {
+  margin-bottom: $baseLineHeight;
+  &.navbar-header {
+    margin-bottom: 0;
+  }
+  @include clearfix;
+}
+
+.navbar .logo{
+  float: left;
+  margin: 24px 20px 0 0;
+  width: 85px;
+  height: 41px;
+  background: $logo;
+}
+.navbar-inner {
+  min-height: $navbarHeight;
+  .navbar-header & {
+    margin-bottom: 0;
+  }
+
+  @include clearfix;
+}
+
+// Navbar search
+// -------------------------
+.navbar-search {
+  position: relative;
+  float: left;
+  margin-bottom: 0;
+  .navbar-header & {
+    margin-top: 6px;
+    float: right;
+  }
+  .search-query {
+    margin-bottom: 0;
+    padding: 4px 8px 4px 24px;
+    @include font-sans-serif(13px, normal, 1);
+    @include border-radius(15px); // redeclare because of specificity of the type attribute
+  }
+  .icon{
+    width: 20px;
+    height: 20px;
+  }
+  .search-icon {    
+    background: url(../image/search-icon.png) no-repeat;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+}
+
+//Navigation
+//-----------
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.navbar-header {
+  margin-top: 20px;
+}
+.navbar-header__nav-item {
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  &:first-child{
+    .navbar-header__nav-item-links{
+      padding-left: 0;
+    }
+  }
+  .navbar-header__nav-item-links {
+    display: block;
+    @include font-shorthand(14px, 600, 20px);
+    padding: 10px 15px;
+    text-decoration: none;
+    color: $navLinkColor;
+    text-shadow: $navShadow;
+    &:hover {
+      color: $navHoverColor;
+      cursor: pointer;
+    }
+  }
+}
+.navbar-header__nav-item:hover .dropdown-menu/* ,
+.login:hover .dropdown-menu */ {
+  display: block;
+}
+
+//Links
+.dropdown-menu .dropdown-menu__item {
+  float: none;
+  @include font-shorthand(18px, normal, 18px);
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #222;
+  text-shadow: 1px 1px rgba(220,211,211,.45);
+  &:hover {
+    color: #0085ba;
+  }
+}
+.navbar .dropdown-menu,
+.login .dropdown-menu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 130px;
+  background-color: $white;
+  border: 1px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 5px 0;
+  z-index: 1000;
+  .dropdown-menu__item{
+    color: #333333;
+    display: block;
+    line-height: 20px;
+    padding: 3px 15px;
+    font-size: 14px;
+    white-space: nowrap;
+    &:hover{
+      background-color: darken($white, 10%);
+    }
+  }
+  &::before, &::after {
+    content: "";
+    position: absolute;
+  }
+  &::before{
+    top: -20px;
+    height: 0;
+    width: 0;
+    border: 10px solid;
+    border-color: transparent transparent rgba(0, 0, 0, .1);
+    //border-bottom-width: 10px;
+  }
+  &::after{
+    top: -16px;
+    height: 0;
+    width: 0;
+    border: 8px solid;
+    border-color: transparent transparent $white;
+  }
+}
+
+.navbar .dropdown-menu{
+  left: 15px;
+  &::before{
+    left: 10px;
+  }
+  &::after{
+    left: 12px;
+  }
+}
+
+.login .dropdown-menu{
+  @include border-radius(6px);
+  padding: 15px;
+  left: -190px;
+  top: 100%;
+  &::before{
+    right: 10px;
+  }
+  &::after{
+    right: 12px;
+  }
+}
+
+
+.other-variant{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 2px 5px;
+  position: relative;
+  color: $linkColor;
+  //border: 1px solid transparent;
+  //border-bottom: 1px dotted lighten($linkColor, 25%);
+  //@include ie7-inline-block();
+  &:hover{
+    background-color: #edf1f5;
+    //border: 1px solid rgba(0,0,0,.15);
+    //border-bottom: none;
+    cursor: pointer;
+
+  }
+}
+.other-variant .nav{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  //border: 1px solid rgba(0,0,0,.15);
+  border-top: none;
+  width: 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  background-color: $white;
+  z-index: 3;
+  padding-bottom: 5px;
+}
+.other-variant .nav li {
+  padding-top: 5px;
+  a{
+    padding: 0 5px;
+  }
+}
+.other-variant:hover .nav{
+  display: block;
+}
+
+

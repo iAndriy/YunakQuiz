@@ -1,0 +1,12 @@
+<% $.each(this, function(i, val) { %>
+	<li class="navbar-header__nav-item">
+		<a class="item navbar-header__nav-item-links" href="<%= val.href %>" id="<%= val.id%>"><%= val.name %></a>
+		<% if(val.subcategory !== undefined){%>
+			<ul class="dropdown-menu nav">
+				<%for(var i = 0; i < val.subcategory.length ; i++){ %>
+                	<li><a href="<%= val.subcategory[i].href %>" class="dropdown-menu__item"><%= val.subcategory[i].name%></a></li>
+                <% } %>
+            </ul>
+		<% } %>
+	</li>
+<% }) %>

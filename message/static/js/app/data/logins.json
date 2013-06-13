@@ -1,0 +1,42 @@
+[
+    {
+        "id"            : "1",
+        "log_in"        : "user1",
+        "email"         : "11111@gmail.com",
+        "pwd"           : "password1",
+        "role"          : "3",
+        "access"        : "1"
+    },
+    {
+        "id"            : "2",
+        "log_in"        : "user2",
+        "email"         : "22222@gmail.com",
+        "pwd"           : "password2",
+        "role"          : "3",
+        "access"        : "2"
+    },
+    {
+        "id"            : "3",
+        "log_in"        : "user3",
+        "email"         : "33333@gmail.com",
+        "pwd"           : "password3",
+        "role"          : "3",
+        "access"        : "2"
+    },
+    {
+        "id"            : "4",
+        "log_in"        : "admin",
+        "email"         : "admin@gmail.com",
+        "pwd"           : "password4",
+        "role"          : "1",
+        "access"        : "3"
+    },
+    {
+        "id"            : "5",
+        "log_in"        : "moderator",
+        "email"         : "moderator@gmail.com",
+        "pwd"           : "password5",
+        "role"          : "2",
+        "access"        : "3"
+    }
+]

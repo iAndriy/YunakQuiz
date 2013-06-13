@@ -1,0 +1,39 @@
+<form name="editForm" id="editForm" class="well" alt="1">
+	<div class="row">
+		<div class="span5 pagination-right">
+			<label for="category">Категорія:</label>
+		</div>
+		<div class="span3">
+
+			<select name="category" id="category">
+
+			<%for(var i = 0; i < this.length; i++){%>
+			    <% if(this[i].parrent_id == 0) {%>
+			    	<option id="<%= this[i].id%>" value="<%=this[i].id%>"><%=this[i].name%></option>
+			    <% } %>
+			<% } %>
+
+			</select>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="span5 pagination-right">
+			<label for="name">Підкатегорія:</label>
+		</div>
+		<div class="span3">
+		
+			<select name="subcategory" id="subcategory">
+
+			<%for(var i = 0; i < this.length; i++){%>
+			    <% if(this[i].parrent_id == 1) {%>
+			    	<option id="<%= this[i].id%>" value="<%=this[i].id%>"><%=this[i].name%></option>
+			    <% } %>
+			<% } %>
+
+			</select>
+
+		</div>
+	</div>
+

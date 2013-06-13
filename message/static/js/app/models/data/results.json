@@ -1,0 +1,19 @@
+[{
+	"userID" : "1",
+	"items"  : [{
+		"id" : "1",
+		"name" : "Патрони",
+		"questCount" : "10",
+		"correctQuestCount" : "7"
+		},{
+		"id" : "1",
+		"name" : "Проби",
+		"questCount" : "10",
+		"correctQuestCount" : "7"
+		},{
+		"id" : "1",
+		"name" : "Вміння",
+		"questCount" : "10",
+		"correctQuestCount" : "7"
+		}]
+}]

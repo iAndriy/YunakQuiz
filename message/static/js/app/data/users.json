@@ -1,0 +1,42 @@
+[
+    {
+        "id"        : "1",
+        "name"      : "Ivan",
+        "login"     : "user1",
+        "password"  : "password1",
+        "role"      : "3",
+        "access"    : "1"
+    },
+    {
+        "id"        : "2",
+        "name"      : "Petro",
+        "login"     : "user2",
+        "password"  : "password2",
+        "role"      : "3",
+        "access"    : "2"
+    },
+    {
+        "id"        : "3",
+        "name"      : "Semen",
+        "login"     : "user3",
+        "password"  : "password3",
+        "role"      : "3",
+        "access"    : "2"
+    },
+    {
+        "id"        : "4",
+        "name"      : "admin",
+        "login"     : "admin",
+        "password"  : "admin",
+        "role"      : "1",
+        "access"    : "3"
+    },
+    {
+        "id"        : "5",
+        "name"      : "Ostap",
+        "login"     : "moderator",
+        "password"  : "moderator",
+        "role"      : "2",
+        "access"    : "3"
+    }
+]

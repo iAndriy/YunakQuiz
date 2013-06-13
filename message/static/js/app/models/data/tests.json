@@ -1,0 +1,136 @@
+[
+    {
+        "id"            : "1",
+        "categoryId"    : "1",
+        "name"          : "Test 1 - data",
+        "description"   : "Test 1 - history",
+        "isReviewed" 	: "true",
+        "isApproved"    : "true",
+        "items"         : [{
+            "id"                : "1",
+            "question"          : "Questions 1",
+            "type"              : "checkbox",
+            "correctAnswerIds"  : ["1", "2"],
+            "answers"           : [{
+                "id"            : "1",
+                "name"          : "Answer 1"
+            }, {
+                "id"            : "2",
+                "name"          : "Answer 2"
+            }, {
+                "id"            : "3",
+                "name"          : "Answer 3"
+            }]
+        }, {
+            "id"                : "2",
+            "question"          : "Questions 2",
+            "type"              : "checkbox",
+            "correctAnswerIds"  : ["4", "5","6"],
+            "answers"           : [{
+                "id"            : "4",
+                "name"          : "Answer 1"
+            }, {
+                "id"            : "5",
+                "name"          : "Answer 2"
+            }, {
+                "id"            : "6",
+                "name"          : "Answer 3"
+            }]
+        }]
+    },
+    {
+        "id"            : "2",
+        "categoryId"    : "2",
+        "name"          : "Test 2",
+        "description"   : "Test 2 - plast",
+        "isReviewed"    : "false",
+        "isApproved"    : "false",
+        "items"         : [{
+            "id"                : "3",
+            "question"          : "Questions 1",
+            "type"              : "radio",
+            "correctAnswerIds"  : ["1"],
+            "answers"           : [{
+                "id"            : "4",
+                "name"          : "Answer 1"
+            }, {
+                "id"            : "5",
+                "name"          : "Answer 2"
+            }, {
+                "id"            : "6",
+                "name"          : "Answer 3"
+            }]
+        }, {
+            "id"                : "4",
+            "question"          : "Questions 2",
+            "type"              : "checkbox",
+            "correctAnswerIds"  : ["8", "9"],
+            "answers"           : [{
+                "id"            : "7",
+                "name"          : "Answer 1"
+            }, {
+                "id"            : "8",
+                "name"          : "Answer 2"
+            }, {
+                "id"            : "9",
+                "name"          : "Answer 3"
+            }]
+        }]
+    },
+    {
+        "id"            : "3",
+        "categoryId"    : "3",
+        "name"          : "Test 3",
+        "description"   : "Test 3 - patrons",
+        "isReviewed"    : "true",
+        "isApproved"    : "false",
+        "items"         : [{
+            "id"                : "5",
+            "question"          : "Questions 1",
+            "type"              : "radio",
+            "correctAnswerIds"  : ["12"],
+            "answers"           : [{
+                "id"            : "10",
+                "name"          : "Answer 1"
+            }, {
+                "id"            : "11",
+                "name"          : "Answer 2"
+            }, {
+                "id"            : "12",
+                "name"          : "Answer 3"
+            }]
+        }, {
+            "id"                : "6",
+            "question"          : "Questions 2",
+            "type"              : "radio",
+            "correctAnswerIds"  : ["13"],
+            "answers"           : [{
+                "id"            : "13",
+                "name"          : "Answer 1"
+            }, {
+                "id"            : "14",
+                "name"          : "Answer 2"
+            }]
+        },
+        {
+            "id"                : "7",
+            "question"          : "Questions 1",
+            "type"              : "radio",
+            "correctAnswerIds"  : ["17"],
+            "answers"           : [{
+                "id"            : "15",
+                "name"          : "Answer 1"
+            }, {
+                "id"            : "16",
+                "name"          : "Answer 2"
+            }, {
+                "id"            : "17",
+                "name"          : "Answer 3"
+            },
+            {
+                "id"            : "18",
+                "name"          : "Answer 4"
+            }]
+        }]
+    }
+]

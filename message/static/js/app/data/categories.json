@@ -1,0 +1,44 @@
+[
+    {
+        "id"            : "1",
+        "parrent_id"    : "0",
+        "name"          : "Проби",
+        "description"   : "Proby description",
+        "href"          : "category"
+    },
+    {   
+        "id"            : "2",
+        "parrent_id"    : "0",
+        "name"          : "Патрони",
+        "description"   : "Patrony description",
+        "href"          : "category"
+    },
+    {
+        "id"            : "3",
+        "parrent_id"    : "0",
+        "name"          : "Вмілості",
+        "description"   : "Vmilosti description",
+        "href"          : "category"
+    },
+    {
+        "id"            : "4",
+        "parrent_id"    : "1",
+        "name"          : "Під_Проби1",
+        "description"   : "Під_Проби1 description",
+        "href"          : "proby_1"
+    },
+    {
+        "id"            : "5",
+        "parrent_id"    : "1",
+        "name"          : "Під_Проби2",
+        "description"   : "Під_Проби2 description",
+        "href"          : "proby_2"
+    },
+    {
+        "id"            : "6",
+        "parrent_id"    : "2",
+        "name"          : "Під_Патронии1",
+        "description"   : "Під_Патрони1 description",
+        "href"          : "patrony_1"
+    }
+]

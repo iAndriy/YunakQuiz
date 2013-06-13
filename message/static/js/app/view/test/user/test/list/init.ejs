@@ -1,0 +1,29 @@
+<%= console.log ("find all") %>
+
+<table cellspacing="10" class="table table_test">
+	<thead class="thead">
+		<tr class="tr">
+			<th = class="th_test">Назва тесту</th>
+			<th class="th_test">Опис тесту</th>
+			<th class="th_test">Редагувати тест</th>
+		</tr>
+	</thead>
+	<tfoot class="tfoot">
+		<tr class="tr">
+			<th class="th_test">Назва тесту</th>
+			<th class="th_test">Опис тесту</th>
+			<th class="th_test">Редагувати тест</th>
+		</tr>
+	</tfoot>
+	<tbody class="tbody">
+		<%for(var i = 0; i < this.length; i++){%>
+			<tr class="tr">
+			    <td class="td_test"><%= this[i].name%></td>
+			    <td class="td_test"><%= this[i].description%></td>
+			    <td id = '<%= this[i].id%>' class = "editTest td td_test"><a>Edit</a></td>
+			</tr>
+		<%}%>
+	</tbody>
+</table>
+
+<input type="button" id="createNewTest" value="add test" class="btn btnred"><br>

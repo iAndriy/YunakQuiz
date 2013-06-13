@@ -1,0 +1,26 @@
+<table class="table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Decription</th>
+			<th>Status</th>
+		</tr>
+	<thead>
+	<tbody>
+		<% $.each(this, function(i, val) { %>
+				<tr>
+					<td><%= val.name%></td>
+					<td><%= val.login%></td>
+					<td>
+						<select class="select_role">
+							<option value="1" <%=(val.role=="1")?"selected":""%>>Адмін</option>
+							<option value="2" <%=(val.role=="2")?"selected":""%>>Модератор</option>
+							<option value="3" <%=(val.role=="3")?"selected":""%>>Юзер</option>
+						</select>
+					</td>
+				</tr>
+		<% }) %>
+	</tbody>
+</table>
+
+	

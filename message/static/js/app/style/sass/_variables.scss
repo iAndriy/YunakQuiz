@@ -1,0 +1,121 @@
+//
+//Grid
+//------------------------
+$gridColumns:                 12 !default;
+$gridColumnsWidth:            60px !default;
+$gridGutterWidth:             20px !default;
+
+$mainBG: url("../image/bgnoise.png") repeat !default;
+$logo:   url("../image/logo-b.png") no-repeat !default;
+$navShadow: 1px 1px rgba(220,211,211,.45) !default;
+$wrapperShadow: 0 0 10px rgba(0,0,0,.1) !default;
+// Grays
+// -------------------------
+$black:                       #000 !default;
+$grayDarker:                  #222 !default;
+$grayDark:                    #333 !default;
+$gray:                        #555 !default;
+$grayLight:                   #999 !default;
+$grayLighter:                 #eee !default;
+$white:                       #fff !default;
+
+// Accent colors
+// -------------------------
+$blue:                        #049cdb !default;
+$blueDark:        			  #0064cd !default;
+$green:  					  #46a546 !default;
+$red:    					  #9d261d !default;
+$yellow: 				      #ffc40d !default;
+$orange: 				      #f89406 !default;
+$pink:   					  #c3325f !default;
+$purple: 					  #7a43b6 !default;
+
+
+// Scaffolding
+// -------------------------
+$bodyBackground: 			  $white !default;
+$textColor:      			  #333 !default;
+$addText: 					  $grayLight !default;
+
+$wrapperBC: 				  $white !default;
+$headerHeroBG: 				  rgba(10, 10, 10, .8);
+
+
+// Links
+// -------------------------
+$linkColor:      			  #08c !default;
+$linkColorHover: 			  darken($linkColor, 15%) !default;
+$linkUnderline:               #b2ccf0 !default;
+
+// Tables
+// -------------------------
+$tableBackground:                   transparent !default; // overall background-color
+$tableBackgroundAccent:             #f9f9f9 !default; // for striping
+$tableBackgroundHover:              #f5f5f5 !default; // for hover
+$tableBorder:                       #ddd !default; // table and cell border
+
+// Typography
+// -------------------------
+$sansFontFamily:  			  Tahoma, Arial, sans-serif !default;
+$serifFontFamily: 			  Georgia, "Times New Roman", Times, serif !default;
+$monoFontFamily:  			  Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+$baseFontSize: 				  14px !default;
+$baseFontFamily: 			  $sansFontFamily !default;
+$baseLineHeight: 			  20px !default;
+$altFontFamily: 			  $serifFontFamily !default;
+
+$headingsFontFamily: 		  inherit !default; // empty to use BS default, $baseFontFamily
+$headingsFontWeight: 		  bold !default; // instead of browser default, bold
+$headingsColor: 		  	  #222 !default; // empty to use BS default, $textColor
+
+$navLinkColor:          #222 !default;
+$navHoverColor:         #0085ba !default;
+
+// Hr border color
+// -------------------------
+$hrBorderT:              rgb(223, 223, 223) !default;
+$hrBorderB:              $white !default;
+
+// Component sizing
+// -------------------------
+// Based on 14px font-size and 20px line-height
+
+$fontSizeLarge: $baseFontSize * 1.25; // ~18px
+$fontSizeSmall: $baseFontSize * 0.85; // ~12px
+$fontSizeMini: $baseFontSize * 0.75; // ~11px
+
+$paddingLarge: 11px 19px !default; // 44px
+$paddingSmall: 2px 10px !default; // 26px
+$paddingMini: 0px 6px !default; // 22px
+
+$baseBorderRadius: 4px !default;
+$borderRadiusLarge: 6px !default;
+$borderRadiusSmall: 3px !default;
+
+// Forms
+// -------------------------
+$inputBackground: $white !default;
+$inputBorder: #ccc !default;
+$inputBorderRadius: $baseBorderRadius !default;
+$inputDisabledBackground: $grayLighter !default;
+$formActionsBackground: #f5f5f5 !default;
+$inputHeight: $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+
+//Buttons
+//--------------------------
+$btnBackground:        #e6e6e6 !default;
+$btnBorder:            darken($btnBackground, 10%) !default;
+$btnColor:             $gray !default;
+$btnHover:             lighten($btnBackground, 5%) !default;
+// Navbar
+// -------------------------
+$navbarCollapseWidth: 979px !default;
+$navbarCollapseDesktopWidth: $navbarCollapseWidth + 1;
+
+$navbarHeight: 40px !default;
+$navbarBackgroundHighlight: #ffffff !default;
+
+// Horizontal forms & lists
+// -------------------------
+$horizontalComponentOffset: 180px !default;

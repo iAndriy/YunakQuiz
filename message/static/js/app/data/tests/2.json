@@ -1,0 +1,41 @@
+[
+{
+    "id"            : "2",
+    "categoryId"    : "2",
+    "name"          : "Test 2",
+    "description"   : "Test 2 - plast",
+    "isReviewed"    : "false",
+    "isApproved"    : "false",
+    "items"         : [{
+        "id"                : "3",
+        "name"          : "Questions 1",
+        "type"              : "radio",
+        "correctAnswerIds"  : ["1"],
+        "items"           : [{
+            "id"            : "4",
+            "name"          : "Answer 1"
+        }, {
+            "id"            : "5",
+            "name"          : "Answer 2"
+        }, {
+            "id"            : "6",
+            "name"          : "Answer 3"
+        }]
+    }, {
+        "id"                : "4",
+        "name"          : "Questions 2",
+        "type"              : "checkbox",
+        "correctAnswerIds"  : ["8", "9"],
+        "items"           : [{
+            "id"            : "7",
+            "name"          : "Answer 1"
+        }, {
+            "id"            : "8",
+            "name"          : "Answer 2"
+        }, {
+            "id"            : "9",
+            "name"          : "Answer 3"
+        }]
+    }]
+}
+]

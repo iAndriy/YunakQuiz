@@ -1,0 +1,46 @@
+// SCAFFOLDING
+// Basic and global styles for generating a grid system, structural layout, and page templates
+// -------------------------------------------------------------------------------------------
+
+
+// STRUCTURAL LAYOUT
+// -----------------
+body {
+  padding:  0 ($baseLineHeight / 2);
+  background: $mainBG;
+  @include font-sans-serif;
+  color: $textColor;
+}
+
+// LINKS
+// -----
+
+a {
+  color: $linkColor;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $linkColorHover;
+  text-decoration: underline;
+}
+
+// a:visited {
+//   color: #990099;
+// }
+
+a.underline{
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+a.underline{
+  text-decoration: none;
+  border-bottom: 1px solid;
+  &{
+    border-color: $linkUnderline;
+  }
+  // &:visited{
+  //   border-color: #e0b2e0;
+  // }
+}

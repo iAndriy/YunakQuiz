@@ -1,0 +1,36 @@
+//BREADCRUMBS
+//---------------------
+
+.breadcrumbs{
+	margin: 0 0 24px;
+	.devider{
+		padding: 0 3px;
+	}
+}
+
+/*    Volodymyr Lukasevych   */
+/*    breadcrumb    */
+.path {
+  float: left;
+  margin-top: 35px;
+  width: 100%;
+}
+
+/* line 333, ../sass/style.scss */
+.path a {
+  font-size: 16px;
+  color: #0896ff;
+  float: left;
+}
+
+/* line 338, ../sass/style.scss */
+.path_current {
+  font-weight: 100;
+  color: #272727;
+  float: left;
+  margin-left: 8px;
+  padding-left: 25px;
+  background-image: url(../images/path_arrow.gif);
+  background-repeat: no-repeat;
+  height: 16px;
+}

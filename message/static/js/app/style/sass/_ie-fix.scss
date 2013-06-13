@@ -1,0 +1,35 @@
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="search"] {
+  &:focus {
+    outline: thin dotted \9!important; /*ie6-9*/
+  }
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-top: 1px \9!important; /* IE8-9 */
+}
+
+.form-horizontal {
+  .controls {
+    *padding-left: 20px;
+    *margin-left: 0!important;
+    &:first-child {
+      *padding-left: $horizontalComponentOffset;
+    }
+  }
+}
+
+.row,
+.container,
+.form-horizontal .control-group,
+.nav-tabs,
+.navbar,
+.navbar-inner {
+  *zoom: 1;
+}

@@ -1,0 +1,41 @@
+[
+{
+    "id"            : "1",
+    "categoryId"    : "1",
+    "name"          : "Test 1 - data",
+    "description"   : "Test 1 - history",
+    "isReviewed"    : "true",
+    "isApproved"    : "true",
+    "items"         : [{
+        "id"                : "1",
+        "name"              : "Questions 1",
+        "type"              : "checkbox",
+        "correctAnswerIds"  : ["1", "2"],
+        "items"           : [{
+            "id"            : "1",
+            "name"          : "Answer 1"
+        }, {
+            "id"            : "2",
+            "name"          : "Answer 2"
+        }, {
+            "id"            : "3",
+            "name"          : "Answer 3"
+        }]
+    }, {
+        "id"                : "2",
+        "name"              : "Questions 2",
+        "type"              : "radio",
+        "correctAnswerIds"  : ["4", "5","6"],
+        "items"           : [{
+            "id"            : "4",
+            "name"          : "Answer 1"
+        }, {
+            "id"            : "5",
+            "name"          : "Answer 2"
+        }, {
+            "id"            : "6",
+            "name"          : "Answer 3"
+        }]
+    }]
+}
+]

@@ -1,0 +1,46 @@
+<button class="btn" onclick="$('#exampleModal1').arcticmodal()" id="#example1">Створити юзера</button>
+<div class="g-hidden">
+	<div class="b-modal" id="exampleModal1">
+		<div class="b-modal_close arcticmodal-close">X</div>
+		<h2>Створення нового юзера</h2>
+		<form action="#" class="form-horizontal" id="add-user-form">
+    		<div class="control-group">
+    			<label class="control-label" for="">Ім'я</label>
+    			<div class="controls">
+	    			<input type="text" name="login">
+	    		</div>
+    		</div>
+    		<div class="control-group">
+    			<label class="control-label" for="">Пароль</label>
+    			<div class="controls">
+	    			<input type="text" name="password">
+	    		</div>
+    		</div>
+    		<div class="control-group">
+    			<div class="controls">
+    				<input type="submit" id="create_user" class="btn" value="Створити користувача">
+    			</div>
+    		</div>
+		</form>
+	</div>
+</div>
+<form name="" id="admin-form">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Delete</th>
+				<th>Name</th>
+				<th>Decription</th>
+				<th>Status</th>
+				<th>Access</th>
+			</tr>
+		</thead>
+		<tbody>
+			<%for(var i = 0; i < this.length ; i++){ %>
+				<tr <%=this[i]%> class="user" id="user-id-<%=this[i].id%>">
+					<%== $.View('static/js/app/view/administrator/list/users.ejs', this[i] )%>
+				</tr>
+			<% } %>
+		</tbody>
+	</table>
+</form>

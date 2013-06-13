@@ -1,0 +1,56 @@
+
+<div class="row pagination-centered">
+  <div class="span5 pagination-right">
+	<label for='name'>Ім'я тесту:</label>
+  </div>
+  <div class="span3">
+	<input type='text' name='name' id='name' class = "span3" placeholder="Введіть ім'я тесту"/>
+</div>
+</div>
+
+<div class='row pagination-centered'>
+  <div class='span5 pagination-right'>
+	<label for='items[0][question]'>Назва питання</label>
+  </div>
+  <div class='span3'>
+	<input type='text' name='items[0][question]' id='items[0][question]' class='span3'/>
+  </div>
+</div>
+<div class="row pagination-centered">
+  <div class="span5 pagination-right">
+	<label for='items[0][correctAnswerIds]'>Номери правильних відповідей</label>
+  </div>
+  <div class="span3">
+	<input type='input' name='items[0][correctAnswerIds]' id='items[0][correctAnswerIds] class="span3"'/>
+  </div>
+</div>
+<div class="row pagination-centered">
+  <div class="span5 pagination-right">
+	<label for='items[0][type]'>Тип відповіді</label>
+  </div>
+  <div class="span3">
+	<input type='input' name='items[0][type]' id='items[0][type]'/>
+  </div>
+</div>
+<div class="row pagination-centered">
+  <div class="span5 pagination-right">
+	<label for='items[0][answer][0][name]'>Відповідь 1</label>
+  </div>
+  <div class="span3">
+	<input type='input' name='items[0][answer][0][name]' id='items[0][answer][0][name]'/>
+  </div>
+</div>
+<div class="row pagination-centered">
+  <div class="span5 pagination-right">
+	<label for='items[0][answer][1][name]'>Відповідь 2</label> <br/>
+	<input type='input' name='items[0][answer][1][name]' id='items[0][answer][1][name]'/>
+  </div>
+</div>
+
+<p><input type="button" id="0" class="addAnswer" alt ="2" value="Add answer"></p>
+
+<p><input type="button" id="1" class="addQuestion" value="Add question"></p>
+
+<p><input type='submit' value='Create'/></p>
+
+</form>

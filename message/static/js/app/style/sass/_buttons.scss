@@ -1,0 +1,105 @@
+//BUTTON STYLES
+//------------------
+
+//Base style
+//------------
+
+//core
+.btn {
+	display: inline-block;
+	//@include ie7-inline-block;
+	padding: 4px 10px 4px;
+	margin-bottom: 0;
+	font-size: $baseFontSize;
+	line-height: $baseLineHeight;
+	color: $btnColor;
+	background-color: $btnBackground; 
+	text-align: center;
+	//text-shadow: 1px 1px 1px rgba(0,0,0, .5);
+	@include box-shadow(0 2px 0px -1px $white inset);
+	vertical-align: middle;
+	border: 1px solid $btnBorder;
+	border-bottom-color: darken($btnBorder, 10%);
+	@include border-radius(3px);
+	//@include ie7-restore-left-whitespace;
+	cursor: pointer;
+	overflow: visible; // ie7 hack for large button width
+}
+
+.btn:hover {
+	text-decoration: none;
+	background-color: $btnHover;
+}
+
+.btn:focus {
+	@include tab-focus;
+}
+
+.btn:active {
+	@include box-shadow(0 1px 6px -1px rgba(0, 0, 0, 0.4) inset);
+	outline: none;
+}
+
+// Disabled state
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-color: darken($white, 30%);
+  color: $white;
+  text-shadow: none;
+  @include box-shadow(none);
+}
+
+//Button sizes
+//------------
+
+.btn-large {
+	padding: 9px 14px;
+	font-size: $baseFontSize + 2px;
+	line-height: normal;
+	@include border-radius(5px);
+}
+
+.btn-small {
+	padding: 5px 9px;
+	font-size: $baseFontSize - 2px;
+	line-height: $baseLineHeight - 2px;
+}
+
+.btn-mini {
+	padding: 2px 6px;
+	font-size: $baseFontSize - 2px;
+	line-height: $baseLineHeight - 4px;
+}
+
+.btngreen {
+  background-color: #38cb7d;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 8px;
+  min-width: 150px;
+}
+/* line 80, ../sass/quiz.scss */
+.btngreen:hover {
+  background-color: #20f7a0;
+}
+.btnred {
+  background-color: #FFC414;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 8px;
+  min-width: 150px;
+}
+/* line 80, ../sass/quiz.scss */
+
+.btnred:hover {
+  background-color: #FFE414;
+}

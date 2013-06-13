@@ -1,0 +1,10 @@
+.wrapper {
+	width: 960px;
+}
+.navbar-header .navbar-header__nav-item a {
+
+}
+.navbar-header .navbar-header__nav-item * a {
+
+}
+@include ie6-grid-fix($gridColumns, $gridGutterWidth);

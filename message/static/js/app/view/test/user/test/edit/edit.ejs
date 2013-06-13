@@ -1,0 +1,24 @@
+<h2><%= name %></h2>
+<h2><%= message %></h2>
+<form id='createTest' action='' class="well" style="background-color: #ffffff;">
+<h2 class="pagination-centered">Cтворення нового тесту</h2>
+
+<div class="row pagination-centered">
+  <div class="span5 pagination-right">
+	<label for='name'>Ім'я тесту:</label>
+  </div>
+  <div class="span3">
+	<input type='text' name='name' id='name' class = "span3" placeholder="Введіть ім'я тесту"/>
+</div>
+</div>
+
+<div class="row pagination-centered">
+  <div class="span5 pagination-right">
+	<label for='description'>Опис тесту:</label>
+  </div>
+  <div class="span3">
+	<input type='text' name='description' id='description' class = "span3" placeholder="Введіть опис тесту"/>
+  </div>
+</div>
+
+<%== $.View('//app/view/test/user/question/question.ejs')%>

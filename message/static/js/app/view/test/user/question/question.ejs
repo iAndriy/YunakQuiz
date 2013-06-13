@@ -1,0 +1,64 @@
+
+<div class='row pagination-centered'>
+<h3>Питання № 1</h3>
+  <div class='span5 pagination-right'>
+	<label for='items[0][name]'>Назва питання:</label>
+  </div>
+  <div class='span3'>
+	<input type='text' name='items[0][name]' id='items[0][name]' class='span3' placeholder="Введіть назву питання"/>
+  </div>
+</div>
+<div class='row pagination-centered'>
+  <div class='span5 pagination-right'>
+	<label for='items[0][correctAnswerIds]'>Номери правильних відповідей:</label>
+  </div>
+  <div class='span3'>
+	<input type='text' name='items[0][correctAnswerIds]' id='items[0][correctAnswerIds] class='span3' placeholder="Приклад: 1, 2"/>
+  </div>
+</div>
+<div class='row'>
+  <div class='span5 pagination-right'>
+	<label for='items[0][type]'>Тип відповіді:</label>
+  </div>
+  <div class='span3'>
+  <input type='radio' name='items[0][type]' id='items[0][type]' value='radio' checked> radio<br>
+  <input type='radio' name='items[0][type]' id='items[0][type]' value="checkbox"> checkbox
+  </div>
+</div>
+<br>
+<div class='row pagination-centered'>
+  <div class='span5 pagination-right'>
+	<label for='items[0][answer][0][name]'>Відповідь 1:</label>
+  </div>
+  <div class='span3'>
+	<input type='text' name='items[0][items][0][name]' id='items[0][items][0][name]' placeholder='Вкажіть варіант відповіді 1'/>
+  </div>
+  <div class='span3 pagination-left'>
+    <input type='hidden' value='' name='items[0][items][0][correct]'>
+    <input type="checkbox" name='items[0][items][0][correct]' value="yes"> Правильна</br>
+  </div>
+</div>
+<div class='row pagination-centered'>
+  <div class='span5 pagination-right'>
+	<label for='items[0][items][1][name]'>Відповідь 2:</label>
+  </div>
+  <div class='span3'>
+	   <input type='text' name='items[0][items][1][name]' id='items[0][items][1][name]' placeholder='Вкажіть варіант відповіді 2'/>
+  </div>
+  <div class='span3 pagination-left'>
+    <input type='hidden' value='' name='items[0][items][1][correct]'>
+    <input type="checkbox" name='items[0][items][1][correct]' value="yes"> Правильна</br>
+  </div>
+</div>
+
+<p class="pagination-centered"><input type="button" id="0" class="addAnswer btn btngreen" alt ="2" value="Add answer"></p>
+
+<p id="countAns0"><input type='hidden' name='items[0][countAnswer]' value='2'/></p>
+
+<p class="pagination-centered"><input type="button" id="1" class="addQuestion btn btngreen" value="Add question"></p>
+
+<p id="countQuest"><input type="hidden" name="countQuestion" id="countQuestion" value="1"/></p>
+
+<p class="pagination-centered"><input type='submit' value='Create' class='btnred'/></p>
+
+</form>

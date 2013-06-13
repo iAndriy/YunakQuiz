@@ -1,0 +1,19 @@
+<input type = "text" id = "filterResults" value="Пошук по назві ..."/>
+
+<table cellspacing="10" class="table table_test">
+	<thead class="thead">
+		<tr class="tr">
+			<th = class="th_test">Назва тесту</th>
+			<th class="th_test">Опис тесту</th>
+		</tr>
+	</thead>
+	<tbody class="tbody">
+		<%for(var i = 0; i < this[0].items.length; i++){%>
+			<tr class="tr">
+			    <td class="testName"><%= this[0].items[i].name%></td>
+			    <td class=""><%= this[0].items[i].correctQuestCount %>/<%= this[0].items[i].questCount%></td>
+			</tr>
+		<%}%>
+	</tbody>
+</table>
+

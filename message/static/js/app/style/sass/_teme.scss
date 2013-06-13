@@ -1,0 +1,21 @@
+
+$mainBG: url("image/stressed_linen.png") repeat;
+
+$wrapperBC: 		    $white !default;
+
+$textCorol: 			#333 !default;
+$headerColor: 			#222 !default;
+$addColor: 				#999 !default;
+
+$linkColor:      	    #08c !default;
+$linkColorHover: 		darken($linkColor, 15%) !default;
+
+$hrBorder:              $grayLighter !default;
+
+$inputBackground: 		$white !default;
+$inputBorder: 			#ccc !default;
+
+$btnBackground:         #e6e6e6 !default;
+$btnBorder:             darken($btnBackground, 10%) !default;
+
+$navLinkColor:          #222 !default;

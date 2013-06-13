@@ -1,0 +1,63 @@
+//TABLES
+//-----------------------------
+
+//Base tables
+//------------
+
+table {
+	max-width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	background-color: $tableBackground; 
+}
+
+//Baseline styles
+//------------
+
+.table {
+	width: 100%;
+	margin-bottom: $baseLineHeight;
+	//Cels
+	th, td {
+		padding: 8px;
+		line-height: $baseLineHeight;
+		text-align: left;
+		vertical-align: top;
+		border-top: 1px solid $tableBorder;
+	}
+	th {
+		font-weight: bold;
+	}
+	thead th {
+		vertical-align: bottom;
+	}
+	thead tr:first-child th{
+		border-top: 0;
+	} 
+
+}
+
+/*added by Kate*/
+
+.table_test {
+  text-align: left;
+  font-size: 14px;
+  font-family: verdana;
+  background: #c0c0c0;
+}
+
+.table_test .thead .tr,
+.table_test .tfoot .tr {
+  background: #c0c0c0;
+  border: none;
+}
+
+.table_test .tbody .tr {
+  background: #f0f0f0;
+}
+
+.td_test, .th_test {
+  border: 1px solid white;
+}
+
+/* ------------- */

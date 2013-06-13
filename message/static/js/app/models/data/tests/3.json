@@ -1,0 +1,58 @@
+[
+{
+    "id"            : "3",
+    "categoryId"    : "3",
+    "name"          : "Test 3",
+    "description"   : "Test 3 - patrons",
+    "isReviewed"    : "true",
+    "isApproved"    : "false",
+    "items"         : [{
+        "id"                : "5",
+        "question"          : "Questions 1",
+        "type"              : "radio",
+        "correctAnswerIds"  : ["12"],
+        "answers"           : [{
+            "id"            : "10",
+            "name"          : "Answer 1"
+        }, {
+            "id"            : "11",
+            "name"          : "Answer 2"
+        }, {
+            "id"            : "12",
+            "name"          : "Answer 3"
+        }]
+    }, {
+        "id"                : "6",
+        "question"          : "Questions 2",
+        "type"              : "radio",
+        "correctAnswerIds"  : ["13"],
+        "answers"           : [{
+            "id"            : "13",
+            "name"          : "Answer 1"
+        }, {
+            "id"            : "14",
+            "name"          : "Answer 2"
+        }]
+    },
+    {
+        "id"                : "7",
+        "question"          : "Questions 1",
+        "type"              : "radio",
+        "correctAnswerIds"  : ["17"],
+        "answers"           : [{
+            "id"            : "15",
+            "name"          : "Answer 1"
+        }, {
+            "id"            : "16",
+            "name"          : "Answer 2"
+        }, {
+            "id"            : "17",
+            "name"          : "Answer 3"
+        },
+        {
+            "id"            : "18",
+            "name"          : "Answer 4"
+        }]
+    }]
+}
+]

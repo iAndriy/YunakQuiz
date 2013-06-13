@@ -1,0 +1,27 @@
+//PAGINATION
+//_____________
+
+.pagination {
+	margin: 14px auto 6px;
+	display: inline-block;
+	background-color: $btnBackground;
+	border: 1px solid $btnBorder;
+	border-bottom-color: darken($btnBorder, 10%);
+	@include border-radius(3px);
+	a, span{
+		color: $btnColor;
+		border-left: 1px solid rgba(255, 255, 255, .7);
+		border-right: 1px solid rgba(0, 0, 0, .04);
+		@include box-shadow(0 2px 0px -1px $white inset);
+		float: left;
+		padding: 6px 10px 5px;
+		text-shadow: 0 1px 0 white;
+	}
+	a:hover, span:hover {
+		background-color: $btnHover;
+		text-decoration: none;
+	}
+	a:first-child, span:first-child {
+		border-left: medium none;
+	}
+}

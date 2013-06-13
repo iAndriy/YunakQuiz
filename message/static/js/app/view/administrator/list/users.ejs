@@ -1,0 +1,18 @@
+console.log(<%= name %>);
+<td><a href='javascript://' class='destroy'>X</a></td>
+<td><%= name %></td>
+<td><%= email %></td>
+<td>
+	<select class="select_role">
+		<option value="1" <%=(role=="admin")?"selected":""%>>Адмін</option>
+		<option value="2" <%=(role=="moderator")?"selected":""%>>Модератор</option>
+		<option value="3" <%=(role=="user")?"selected":""%>>Юзер</option>
+	</select>
+</td>
+<td>
+	<select class="select_access">
+		<option value="1" <%=(role=="admin")?"selected":""%>>Normal</option>
+		<option value="2" <%=(role=="moderator")?"selected":""%>>Block</option>
+		<option value="3" <%=(role=="user")?"selected":""%>>Banned</option>
+	</select>
+</td>
